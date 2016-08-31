@@ -92,3 +92,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias pw="cat /home/sun/workspace/work-projects/passwd|clipcopy"
 alias sf="php bin/console"
+alias gitco="git checkout"
+alias gitcum="git config user.email 'huachuang20@gmail.com'"
+alias e="emacs -nw"
+alias eq="emacs -nw -Q"
+# HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1` if this doesn't work, try adding `-n` option
+# sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
+# sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
+eval "$(thefuck --alias)"
