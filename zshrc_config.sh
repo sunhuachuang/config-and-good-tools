@@ -61,7 +61,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -94,14 +94,40 @@ alias pw="cat /home/sun/workspace/work-projects/passwd|clipcopy"
 alias sf="php bin/console"
 alias gitco="git checkout"
 alias gitcum="git config user.email 'huachuang20@gmail.com'"
-alias e="emacs -nw"
-alias eq="emacs -nw -Q"
+
+alias emacs="emacs --daemon"
+alias eq="emacs -nw quick"
 alias sueq="sudo emacs -nw -Q"
+
+alias e='emacsclient -t'
+alias ec='emacsclient -c &2>1'
+#alias vim='emacsclient -t'
+#alias vi='emacsclient -t'
+
 alias gitcache="git config --global credential.helper 'cache --timeout=86400'"
 alias f="fuck"
-ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa
+alias pw-ssh="ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa"
+alias brails="bin/rails"
+alias brake="bin/rake"
+alias kg="cd /home/sun/workspace/work-projects/kg"
+alias mg="cd /home/sun/workspace/github"
 
 # HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1` if this doesn't work, try adding `-n` option
 # sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
 # sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
-eval "$(thefuck --alias)"
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+
+# rust racer
+#export RUST_SRC_HOME=/home/sun/workspace/github/other_projects/rust
+#export RUST_SRC_PATH=$RUST_SRC_HOME/src
+
+eval `ssh-agent`
+
+LANG=zh_CN.utf8
+LC_CTYPE=zh_CN.utf8

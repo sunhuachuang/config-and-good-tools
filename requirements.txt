@@ -17,7 +17,7 @@ thefuck
 tornado
 ufw
 urllib3
-virtualenv
+pyenv
 Werkzeug
 wheel
 WTForms
