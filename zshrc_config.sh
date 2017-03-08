@@ -103,6 +103,7 @@ alias e='emacsclient -t'
 alias ec='emacsclient -c &2>1'
 #alias vim='emacsclient -t'
 #alias vi='emacsclient -t'
+alias vi='vim'
 
 alias gitcache="git config --global credential.helper 'cache --timeout=86400'"
 alias f="fuck"
@@ -111,6 +112,7 @@ alias brails="bin/rails"
 alias brake="bin/rake"
 alias kg="cd /home/sun/workspace/work-projects/kg"
 alias mg="cd /home/sun/workspace/github"
+alias wg="cd /home/sun/workspace/work-projects"
 
 # HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1` if this doesn't work, try adding `-n` option
 # sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var

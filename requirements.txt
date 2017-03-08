@@ -1,34 +1,54 @@
-beautifulsoup4
-gevent
-greenlet
-gunicorn
-Jinja2
-Mako
-mycli
+# tools
+bpython # better python shell https://github.com/bpython/bpython
+mycli   # better mysql
+pyenv   # better version control
+thefuck # deal with wrong in shell
+
+Pillow  # image lib https://github.com/python-pillow/Pillow
+wheel   # make a .whl lib
+
+# web tools
+httpie   # better rest client
+requests # better http request
+
+#Mako     # template library
+#WTForms  # form library
+#SQLAlchemy
+
+# web framework
+flask   # quick
+sanic   # cool async python3.5+ https://github.com/channelcat/sanic
+tornado # good for real time
+
+# flask bundler
+#Flask-Cache
+#Flask-DebugToolbar
+#Flask-Exceptional
+#Flask-Login
+#Flask-Mail
+#Flask-RESTful
+#Flask-Script
+#Flask-SqlAlchemy
+#Flask-Uploads
+#Flask-WTF
+
+# web services
+gunicorn # https://github.com/benoitc/gunicorn
+uvloop   # asyncio event loop python3.5+ https://github.com/MagicStack/uvloop
+#meinheld # asynchronous WSGI Web Server  https://github.com/mopemope/meinheld
+#gevent  # better for pythn2 coroutine -based Python networking library https://github.com/gevent/gevent
+#greenlet # https://github.com/python-greenlet/greenlet
+
+# database client
+#asyncpg # better PostgreSQL client, python3.5+
+PyMySQL # better connect mysql
+redis   # redis client
+
+# crawler
+#beautifulsoup4
+
+# math
 numpy
-Pillow
-pycurl
-PyMySQL
-redis
-requests
-setuptools
-SQLAlchemy
-thefuck
-tornado
-ufw
-urllib3
-pyenv
-Werkzeug
-wheel
-WTForms
-Flask
-Flask-Cache
-Flask-DebugToolbar
-Flask-Exceptional
-Flask-Login
-Flask-Mail
-Flask-RESTful
-Flask-Script
-Flask-SqlAlchemy
-Flask-Uploads
-Flask-WTF
+
+# AI
+#tensorflow-gpu
