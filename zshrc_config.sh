@@ -121,13 +121,13 @@ alias wg="cd /home/sun/workspace/work-projects"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # rust racer
-#export RUST_SRC_HOME=/home/sun/workspace/github/other_projects/rust
-#export RUST_SRC_PATH=$RUST_SRC_HOME/src
+export RUST_SRC_HOME=/home/sun/workspace/github/other_projects/rust
+export RUST_SRC_PATH=$RUST_SRC_HOME/src
 
 eval `ssh-agent`
 

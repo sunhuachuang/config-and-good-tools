@@ -1,7 +1,7 @@
 # tools
 bpython # better python shell https://github.com/bpython/bpython
 mycli   # better mysql
-pyenv   # better version control
+#pyenv   # better version control use git not pip
 thefuck # deal with wrong in shell
 
 Pillow  # image lib https://github.com/python-pillow/Pillow
