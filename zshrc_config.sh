@@ -76,7 +76,7 @@ setxkbmap -option ctrl:swapcaps
 # export LC_CTYPE=zh_CN.utf8
 
 # ssh
-export SSH_KEY_PATH="~/.ssh/id_rsa"
+# export SSH_KEY_PATH="~/.ssh/id_rsa"
 # eval `ssh-agent`
 
 # github
