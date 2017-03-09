@@ -1,11 +1,3 @@
-#personal init
-setxkbmap -option ctrl:swapcaps #change ctrl and caps
-
-if [ -n "$INSIDE_EMACS" ]; then
-    export EDITOR=emacsclient
-    unset zle_bracketed_paste  # This line
-fi
-
 # Path to your oh-my-zsh installation.
 export ZSH=/home/sun/.oh-my-zsh
 
@@ -60,76 +52,79 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # User configuration
-
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+# Personal Init
+# change ctrl and caps
+setxkbmap -option ctrl:swapcaps
+
+# make emacs shell better only for user's config
+#if [ -n "$INSIDE_EMACS" ]; then
+#    export EDITOR=emacsclient
+#    unset zle_bracketed_paste  # This line
+#fi
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export LANG=zh_CN.utf8
+# export LC_CTYPE=zh_CN.utf8
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/id_rsa"
+# eval `ssh-agent`
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# github
+# ssh -T git@github.com
+
+# workspace
 alias pw="cat /home/sun/workspace/work-projects/passwd|clipcopy"
-alias sf="php bin/console"
-alias gitco="git checkout"
-alias gitcum="git config user.email 'huachuang20@gmail.com'"
-
-alias emacs="emacs --daemon"
-alias eq="emacs -nw quick"
-alias sueq="sudo emacs -nw -Q"
-
-alias e='emacsclient -t'
-alias ec='emacsclient -c &2>1'
-#alias vim='emacsclient -t'
-#alias vi='emacsclient -t'
-alias vi='vim'
-
-alias gitcache="git config --global credential.helper 'cache --timeout=86400'"
-alias f="fuck"
 alias pw-ssh="ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa"
-alias brails="bin/rails"
-alias brake="bin/rake"
 alias kg="cd /home/sun/workspace/work-projects/kg"
 alias mg="cd /home/sun/workspace/github"
 alias wg="cd /home/sun/workspace/work-projects"
 
-# HTTPDUSER=`ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1` if this doesn't work, try adding `-n` option
-# sudo setfacl -R -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
-# sudo setfacl -dR -m u:"$HTTPDUSER":rwX -m u:`whoami`:rwX var
+# rails
+alias brails="bin/rails"
+alias brake="bin/rake"
 
+# symfony
+alias sf="php bin/console"
+
+# git
+alias gitco="git checkout"
+alias gituser="git config --global user.name sun"
+alias gitself="git config user.email 'huachuang20@gmail.com'"
+alias gitwork="git config user.email 'sun@webimpact.co.jp'"
+alias gitcache="git config --global credential.helper 'cache --timeout=86400'"
+
+# editor
+alias emacs="emacs --daemon"
+alias eq="emacs -nw quick"
+alias sueq="sudo emacs -nw -Q"
+alias e="emacsclient -t"
+alias ec="emacsclient -c &"
+#alias vim="emacsclient -t"
+#alias vi="emacsclient -t"
+alias vi="vim"
+
+# tools
+alias f="fuck"
+
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # rust racer
-export RUST_SRC_HOME=/home/sun/workspace/github/other_projects/rust
-export RUST_SRC_PATH=$RUST_SRC_HOME/src
-
-eval `ssh-agent`
-
-LANG=zh_CN.utf8
-LC_CTYPE=zh_CN.utf8
+export RUST_SRC_HOME="/home/sun/workspace/github/other_projects/rust"
+export RUST_SRC_PATH="$RUST_SRC_HOME/src"
