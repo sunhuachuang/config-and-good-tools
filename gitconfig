@@ -1,0 +1,7 @@
+[credential]
+	helper = cache --timeout=86400
+
+[core]
+	excludesfile = /home/sun/.gitignore
+[user]
+	name = sun
