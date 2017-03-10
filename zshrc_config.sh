@@ -49,10 +49,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(archlinux emacs git rust golang python cargo rake rake-fast rails symfony2)
 
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin:/home/sun/.script"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -89,19 +89,10 @@ alias kg="cd /home/sun/workspace/work-projects/kg"
 alias mg="cd /home/sun/workspace/github"
 alias wg="cd /home/sun/workspace/work-projects"
 
-# rails
-alias brails="bin/rails"
-alias brake="bin/rake"
-
-# symfony
-alias sf="php bin/console"
-
 # git
-alias gitco="git checkout"
 alias gituser="git config --global user.name sun"
 alias gitself="git config user.email 'huachuang20@gmail.com'"
 alias gitwork="git config user.email 'sun@webimpact.co.jp'"
-alias gitcache="git config --global credential.helper 'cache --timeout=86400'"
 
 # editor
 alias emacs="emacs --daemon"
