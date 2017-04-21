@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(archlinux emacs git rust golang python cargo rake rake-fast rails symfony2)
+plugins=(archlinux git rust golang python cargo rake rake-fast rails symfony2)
 
 # User configuration
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sun/.cargo/bin:/home/sun/.script"
@@ -62,7 +62,7 @@ export ARCHFLAGS="-arch x86_64"
 
 # Personal Init
 # change ctrl and caps
-setxkbmap -option ctrl:swapcaps
+#setxkbmap -option ctrl:swapcaps
 
 # make emacs shell better only for user's config
 #if [ -n "$INSIDE_EMACS" ]; then
@@ -83,7 +83,8 @@ setxkbmap -option ctrl:swapcaps
 # ssh -T git@github.com
 
 # workspace
-alias pw="cat /home/sun/workspace/work-projects/passwd|clipcopy"
+alias pw="xsel --clipboard < /home/sun/workspace/work-projects/passwd"
+alias agent="eval `ssh-agent`"
 alias pw-ssh="ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa"
 alias kg="cd /home/sun/workspace/work-projects/kg"
 alias mg="cd /home/sun/workspace/github"
@@ -95,7 +96,7 @@ alias gitself="git config user.email 'huachuang20@gmail.com'"
 alias gitwork="git config user.email 'sun@webimpact.co.jp'"
 
 # editor
-alias emacs="emacs --daemon"
+#alias emacs="emacs --daemon"
 alias eq="emacs -nw quick"
 alias sueq="sudo emacs -nw -Q"
 alias e="emacsclient -t"
@@ -106,16 +107,25 @@ alias vi="vim"
 
 # tools
 alias f="fuck"
+alias bp="bpython"
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
 
 # rust racer
-export RUST_SRC_HOME="/home/sun/workspace/github/other_projects/rust"
-export RUST_SRC_PATH="$RUST_SRC_HOME/src"
+export RUST_SRC_HOME=$HOME/workspace/github/other-projects/rust
+export RUST_SRC_PATH=$RUST_SRC_HOME/src
+
+# go
+export GOROOT=$HOME/.go
+export GOPATH=$HOME/.gopath
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# good-script
+export PATH=$PATH:$HOME/.script

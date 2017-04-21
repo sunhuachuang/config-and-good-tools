@@ -3,6 +3,7 @@ bpython # better python shell https://github.com/bpython/bpython
 mycli   # better mysql
 #pyenv   # better version control use git not pip
 thefuck # deal with wrong in shell
+pexpect # python expect, autowork
 
 #Pillow  # image lib https://github.com/python-pillow/Pillow
 #wheel   # make a .whl lib
