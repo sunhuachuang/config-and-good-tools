@@ -1,4 +1,6 @@
-sudo pacman -Syu
+# su
+pacman -Syu
+pacman -S sudo
 
 # base
 sudo pacman -S gcc make cmake
