@@ -1,4 +1,4 @@
-# person-file-in-linux (now is manjaro)
+# person-file-in-linux
 personal file keep step.
 
 ## funny tools
