@@ -16,7 +16,26 @@ sudo pacman -S php
 sudo pacman -S composer
 sudo pacman -S ruby
 
-# x-windows
+# x-windows xfce4
+sudo pacman -S xfce4
+
+# use xinit
+sudo pacman -S xinit
+
+# set below to .xinitrc
+# export LANG=zh_CN.UTF-8
+# export LANGUAGE=zh_CN.UTF-8
+# export LC_CTYPE=zh_CN.UTF-8
+# xscreensaver &
+# exec startxfce4
+
+# fcitx
+sudo pacman -S fcitx fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-config
+sudo yaourt -S fcitx-sogoupinyin
+# set below to .xinitrc
+# export GTK_IM_MODULE=fcitx
+# export QT_IM_MODULE=fcitx
+# export XMODIFIERS=@im=fcitx
 
 # tool
 sudo pacman -S xsel
@@ -34,7 +53,6 @@ sudo yaourt -Syu
 sudo yaourt -S xsv
 sudo yaourt -S wrk
 # sudo yaourt -S skypeforlinux-bin
-# sudo yaourt -S fcitx-sogoupinyin
 # sudo yaourt -S netease-cloud-music
 
 # python
