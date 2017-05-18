@@ -62,7 +62,7 @@ export ARCHFLAGS="-arch x86_64"
 
 # Personal Init
 # change ctrl and caps
-#setxkbmap -option ctrl:swapcaps
+# setxkbmap -option ctrl:swapcaps
 
 # make emacs shell better only for user's config
 #if [ -n "$INSIDE_EMACS" ]; then
@@ -87,8 +87,10 @@ alias pw="xsel --clipboard < /home/sun/workspace/work-projects/passwd"
 alias agent="eval `ssh-agent`"
 alias pw-ssh="ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa"
 alias kg="cd /home/sun/workspace/work-projects/kg"
+alias dh="cd /home/sun/workspace/work-projects/dayshome/Website"
 alias mg="cd /home/sun/workspace/github"
 alias wg="cd /home/sun/workspace/work-projects"
+alias shadowsocks="/home/sun/.script/shadowsocks/shadowsocks-go > error.log 2>&1 &"
 
 # git
 alias gituser="git config --global user.name sun"
@@ -123,7 +125,7 @@ export RUST_SRC_HOME=$HOME/workspace/github/other-projects/rust
 export RUST_SRC_PATH=$RUST_SRC_HOME/src
 
 # go
-export GOROOT=$HOME/.go
+#export GOROOT=$HOME/.go
 export GOPATH=$HOME/.gopath
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
