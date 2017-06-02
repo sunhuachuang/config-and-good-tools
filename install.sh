@@ -31,7 +31,8 @@ sudo pacman -S xinit
 
 # fcitx
 sudo pacman -S fcitx fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-config
-sudo yaourt -S fcitx-sogoupinyin
+# sudo yaourt -S fcitx-sogoupinyin
+
 # set below to .xinitrc
 # export GTK_IM_MODULE=fcitx
 # export QT_IM_MODULE=fcitx
@@ -49,11 +50,12 @@ sudo chsh -s $(which zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # aur
-sudo yaourt -Syu
-sudo yaourt -S xsv
-sudo yaourt -S wrk
-# sudo yaourt -S skypeforlinux-bin
-# sudo yaourt -S netease-cloud-music
+yaourt -Syua
+yaourt -S xsv
+yaourt -S wrk
+# yaourt -S skypeforlinux-bin
+# yaourt -S netease-cloud-music
+yaourt -S netease-musicbox-git
 
 # python
 sudo pip install -r requirements.txt

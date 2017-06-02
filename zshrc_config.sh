@@ -62,7 +62,7 @@ export ARCHFLAGS="-arch x86_64"
 
 # Personal Init
 # change ctrl and caps
-# setxkbmap -option ctrl:swapcaps
+alias ctrlcaps="setxkbmap -option ctrl:swapcaps"
 
 # make emacs shell better only for user's config
 #if [ -n "$INSIDE_EMACS" ]; then
@@ -90,7 +90,7 @@ alias kg="cd /home/sun/workspace/work-projects/kg"
 alias dh="cd /home/sun/workspace/work-projects/dayshome/Website"
 alias mg="cd /home/sun/workspace/github"
 alias wg="cd /home/sun/workspace/work-projects"
-alias shadowsocks="/home/sun/.script/shadowsocks/shadowsocks-go > error.log 2>&1 &"
+alias shadowsocks="/home/sun/.script/shadowsocks/shadowsocks-go > /home/sun/.script/shadowsocks/error.log 2>&1 &"
 
 # git
 alias gituser="git config --global user.name sun"
