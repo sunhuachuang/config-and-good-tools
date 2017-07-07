@@ -9,6 +9,7 @@ personal file keep step.
 1. [wkhtmltox](http://wkhtmltopdf.org/) html to pdf.
 1. [wrk](https://github.com/wg/wrk) HTTP benchmarking tool.
 1. clipcopy.
+1. [feh](https://github.com/derf/feh) open image fast.
 
 ### python moudles
 requirements.txt: `pip3 install -r requirements.txt`
