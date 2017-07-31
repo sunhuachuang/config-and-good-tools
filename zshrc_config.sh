@@ -85,17 +85,16 @@ alias ctrlcaps="setxkbmap -option ctrl:swapcaps"
 # workspace
 alias pw="xsel --clipboard < /home/sun/workspace/work-projects/passwd"
 alias agent="eval `ssh-agent`"
-alias pw-ssh="ssh-add ~/.ssh/sun@svn.webimpact.co.jp.rsa"
-alias kg="cd /home/sun/workspace/work-projects/kg"
-alias dh="cd /home/sun/workspace/work-projects/dayshome/Website"
+alias pw-ssh="ssh-add ~/.ssh/huachuang20@gmail.com.rsa"
 alias mg="cd /home/sun/workspace/github"
 alias wg="cd /home/sun/workspace/work-projects"
 alias shadowsocks="/home/sun/.script/shadowsocks/shadowsocks-go > /home/sun/.script/shadowsocks/error.log 2>&1 &"
+alias autopep8-dir="autopep8 --in-place --recursive"
 
 # git
 alias gituser="git config --global user.name sun"
 alias gitself="git config user.email 'huachuang20@gmail.com'"
-alias gitwork="git config user.email 'sun@webimpact.co.jp'"
+alias gitwork="git config user.email 'huachuang20@gmail.com'"
 
 # editor
 #alias emacs="emacs --daemon"
@@ -131,3 +130,5 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # good-script
 export PATH=$PATH:$HOME/.script
+
+eval $(thefuck --alias)
