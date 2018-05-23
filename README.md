@@ -1,34 +1,53 @@
-# person-file-in-linux
-personal file keep step.
+# Reinstall My Linux Environment.
 
-## funny tools
-1. [mycli](https://github.com/dbcli/mycli) mysql AutoCompletion and Syntax Highlighting. (pip)
-1. [rg](https://github.com/BurntSushi/ripgrep) ripgrep speed of grep.
-1. [the fuck](https://github.com/nvbn/thefuck) console command help. (pip)
-1. [xsv](https://github.com/BurntSushi/xsv) fast csv toolkit.
-1. [wkhtmltox](http://wkhtmltopdf.org/) html to pdf.
-1. [wrk](https://github.com/wg/wrk) HTTP benchmarking tool.
-1. clipcopy.
-1. [feh](https://github.com/derf/feh) open image fast.
+## Arch (+ awesome)
 
-### python moudles
-requirements.txt: `pip3 install -r requirements.txt`
+## Manjaro (+ xfce)
 
-### lang
-1. python is not need to install. use [pyenv](https://github.com/pyenv/pyenv) control.
-1. now ```sudo pacman -S php``` (old) php7-mysql, php7-json, php7-gd, php7-curl, php7-opcache, php7-mbstring, php7-readline php7-xml php7-zip
-1. ruby use [rbenv](https://github.com/rbenv/rbenv)
-1. rust use [rustup](https://github.com/rust-lang-nursery/rustup.rs) or [download](https://www.rust-lang.org/en-US/other-installers.html)
-1. golang stable version use ```sudo pacman -S go```
+## Manjaro (+ bspwm)
 
-## software
-1. mysql
-1. redis
-1. emacs vim
-1. firefox chrome(no)
-1. nginx ssh
-1. pip3 composer
-1. skype ```sudo yaourt -S skypeforlinux-bin```
-1. sogou ```sudo yaourt -S fcitx-sogoupinyin```
-1. 网易云音乐
-1. libreoffice
+## Ubuntu
+
+## Next Step
+### HOME (dotfiles)
+
+### systemdeps (Command Tools + Daemon + Desktop Apps)
+
+#### Command Tools
+- **ls => [exa](https://github.com/ogham/exa)**: -T is tree.
+- **cat => [bat](https://github.com/sharkdp/bat)**: A cat(1) clone with syntax highlighting and Git integration.
+- **top => htop**: Human.
+- **grep => [rg](https://github.com/BurntSushi/ripgrep)**: ripgrep is fastest.
+- [mycli](https://github.com/dbcli/mycli) mysql AutoCompletion and Syntax Highlighting. (pip)
+- [the fuck](https://github.com/nvbn/thefuck) console command help. (pip)
+- [xsv](https://github.com/BurntSushi/xsv) fast csv toolkit.
+- [wkhtmltox](http://wkhtmltopdf.org/) html to pdf.
+- [wrk](https://github.com/wg/wrk) HTTP benchmarking tool.
+- [feh](https://github.com/derf/feh) open image fast.
+- [mupdf](https://mupdf.com/) PDF, XPS, OpenXPS, CBZ, EPUB, and FictionBook 2 viewer.
+
+#### Daemon Apps
+- PostgreSQL
+- Redis
+- Emacs
+- Vim
+- Firefox Nightly
+- Chromium
+- Nginx
+
+#### Desktop Apps
+- skype ```sudo yaourt -S skypeforlinux-bin```
+- sogou ```sudo yaourt -S fcitx-sogoupinyin```
+- 网易云音乐
+- libreoffice
+
+### workspace
+
+### emacs
+
+### languages
+- Rust: use [rustup](https://github.com/rust-lang-nursery/rustup.rs) or [download](https://www.rust-lang.org/en-US/other-installers.html)
+- Python: is not need to install. use [pyenv](https://github.com/pyenv/pyenv) control.
+- Ruby: use [rbenv](https://github.com/rbenv/rbenv)
+- PHP: ```sudo pacman -S php``` (old) php7-mysql, php7-json, php7-gd, php7-curl, php7-opcache, php7-mbstring, php7-readline php7-xml php7-zip
+- Golang: stable version use ```sudo pacman -S go```

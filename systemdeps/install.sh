@@ -9,6 +9,8 @@ sudo pacman -S nginx
 sudo pacman -S openssl
 sudo pacman -S git
 sudo pacman -S wget
+sudo pacman -S pulseaudio
+sudo pacman -S xfce4-pulseaudio-plugin 
 
 # lang
 sudo pacman -S python
@@ -55,7 +57,7 @@ yaourt -S xsv
 yaourt -S wrk
 # yaourt -S skypeforlinux-bin
 # yaourt -S netease-cloud-music
-yaourt -S netease-musicbox-git
+# yaourt -S netease-musicbox-git use pip2 install
 
 # python
 sudo pip install -r requirements.txt

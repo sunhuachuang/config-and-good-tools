@@ -9,8 +9,8 @@ pexpect # python expect, autowork
 #wheel   # make a .whl lib
 
 # web tools
-#httpie   # better rest client
-#requests # better http request
+# httpie   # better rest client
+requests # better http request
 
 #Mako     # template library
 #WTForms  # form library
@@ -43,7 +43,7 @@ pexpect # python expect, autowork
 # database client
 #asyncpg # better PostgreSQL client, python3.5+
 #PyMySQL # better connect mysql
-#redis   # redis client
+redis   # redis client
 
 # crawler
 #beautifulsoup4
