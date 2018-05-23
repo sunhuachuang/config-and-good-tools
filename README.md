@@ -1,17 +1,23 @@
 # Reinstall My Linux Environment.
 
-## Arch (+ awesome)
+## Arch
+...
 
 ## Manjaro (+ xfce)
+...
 
 ## Manjaro (+ bspwm)
+...
 
 ## Ubuntu
+...
 
 ## Next Step
 ### HOME (dotfiles)
+...
 
 ### systemdeps (Command Tools + Daemon + Desktop Apps)
+...
 
 #### Command Tools
 - **ls => [exa](https://github.com/ogham/exa)**: -T is tree.
@@ -27,23 +33,25 @@
 - [mupdf](https://mupdf.com/) PDF, XPS, OpenXPS, CBZ, EPUB, and FictionBook 2 viewer.
 
 #### Daemon Apps
-- PostgreSQL
-- Redis
 - Emacs
 - Vim
-- Firefox Nightly
-- Chromium
+- PostgreSQL
+- Redis
 - Nginx
 
 #### Desktop Apps
+- Firefox Nightly
+- Chromium
 - skype ```sudo yaourt -S skypeforlinux-bin```
 - sogou ```sudo yaourt -S fcitx-sogoupinyin```
 - 网易云音乐
 - libreoffice
 
 ### workspace
+...
 
 ### emacs
+...
 
 ### languages
 - Rust: use [rustup](https://github.com/rust-lang-nursery/rustup.rs) or [download](https://www.rust-lang.org/en-US/other-installers.html)
